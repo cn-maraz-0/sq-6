@@ -1,0 +1,73 @@
+$drag-margin: -8px;
+
+.col {
+    overflow: hidden;
+}
+
+.btn {
+    width: 2rem;
+
+    &-toggle {
+        margin-bottom: -.125rem;
+    }
+
+    &:focus {
+        border-color: transparent;
+    }
+}
+
+.category {
+    margin-bottom: 1rem;
+}
+
+.droppable {
+    position: relative;
+
+    .drop-indicator {
+        @include absolute($drag-margin, $drag-margin, $drag-margin, $drag-margin);
+        background: none;
+        border: 2px dashed $color-black;
+        display: none;
+        pointer-events: none;
+    }
+
+    &.cdk-drop-list-dragging {
+        border: 0;
+
+        .drop-indicator {
+            display: block;
+        }
+    }
+}
+
+.cdk-drag-preview {
+    background: $color-white !important;
+
+    a {
+        color: $color-black !important;
+    }
+}
+
+.cdk-drag-placeholder {
+    display: none;
+}
+
+.cdk-drag-animating {
+    transition: none;
+}
+
+.nav-heading {
+    margin-left: -1rem;
+}
+
+.nav-item {
+    align-items: center;
+
+    .drag-handle {
+        margin-right: .5rem;
+    }
+}
+
+.item-published {
+    margin-bottom: 1px;
+}
