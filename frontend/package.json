@@ -23,7 +23,7 @@
     "@angular/common": "12.1.2",
     "@angular/core": "12.1.2",
     "@angular/forms": "12.1.2",
-    "@angular/localize": "12.1.2",
+    "@angular/localize": "16.0.6",
     "@angular/platform-browser": "12.1.2",
     "@angular/platform-browser-dynamic": "12.1.2",
     "@angular/platform-server": "12.1.2",
